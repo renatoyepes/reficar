@@ -787,8 +787,8 @@ $settings['entity_update_batch_size'] = 50;
 # }
 $databases['default']['default'] = array (
   'database' => 'reficar',
-  'username' => 'root',
-  'password' => 'mysql2018',
+  'username' => 'Reficar_web',
+  'password' => 'Reficar_18',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
