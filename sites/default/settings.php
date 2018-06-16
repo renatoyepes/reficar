@@ -297,7 +297,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'G8NgZR2NgL0vnEIcYPzeKj3QDQqYLlZqTj04RYWTKFVL8z37v7LrPMB1BwcwILNXNHm9fAooDg';
+$settings['hash_salt'] = 'iH8XQ2qc5fsNGEvp6c2n75rvPA-RqIyFlqq2Rn2XFCMVg6es7GM4nph9NzR_DCVkOVlZPzAIDg';
 
 /**
  * Deployment identifier.
@@ -528,9 +528,6 @@ if ($settings['hash_salt']) {
  * pointing to the same server. Do not include a trailing slash.
  */
 # $settings['file_public_base_url'] = 'http://downloads.example.com/files';
-
-#$base_url = 'http://172.24.30.13:80/var/www/html/reficar_site_drupal';
-#$base_url = 'http://172.24.30.13:80/reficar_site_drupal';
 
 /**
  * Public file path:
@@ -789,9 +786,9 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'u690488171_rsd',
-  'username' => 'Reficar_web',
-  'password' => 'Reficar_18',
+  'database' => 'reficar',
+  'username' => 'root',
+  'password' => 'mysql2018',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -799,4 +796,4 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_vD3aaxdyxks-te_RRRu3zn-seuYrP5YCGCASQjzMgTYd9DGUhHC71aDRZargC-X5ssud0rlDTw/sync';
+$config_directories['sync'] = 'sites/default/files/config_UUMDMxLbciIRn9LkGTxLAsyj1urUYfLEn3u8dNAs8FTJ59PE8uyNC2JMG_9Jj0jyG4j2tBtq_A/sync';
