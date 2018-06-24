@@ -13,7 +13,9 @@
 
   font-style: normal;
 }
+.page-header{
 
+}
 body {
   font-family: "raleway";
 
@@ -211,6 +213,7 @@ ul.brand-site-menu li {
 }
 
 .page-header {
+  display: none;
   width: 280px;
 
   margin: 0 auto;
