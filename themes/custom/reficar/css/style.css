@@ -28,7 +28,21 @@ body {
 .break-line {
   clear: both;
 }
-
+.view-slider-section
+{
+  overflow: hidden;
+}
+@media screen and (min-width: 768px)
+{
+  .view-slider-section,
+  .image-section
+  {
+    width: 100vw;
+    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
 header#navbar {
   margin: 0;
 
@@ -40,7 +54,6 @@ header#navbar {
 
   border: none;
   padding: 0px;
-  overflow: hidden;
 }
 
 header#navbar .container {
@@ -84,11 +97,33 @@ header#navbar .navbar-nav a:focus {
   text-decoration: none;
 }
 
-.navbar-header .logo,
+.navbar-header .logo
+{
+  z-index: 999;
+  margin: 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  background: white !important;
+}
+
+@media screen and (min-width: 768px)
+{
+  .navbar-header .logo{
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    margin: 0;
+    background: transparent !important;
+  }
+}
 .navbar-header .name {
   display: none;
 }
-
+.navbar-header
+{
+  float: inherit !important;
+}
 .dropdown-menu > li > a {
   text-transform: none !important;
 
@@ -336,7 +371,8 @@ section#main-content {
 
 /* SECCIONES */
 
-.node-type-section .field-name-field-title .field-item {
+.node-type-section .field-name-field-title .field-item,
+div[class*="-field-titulo"] {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
@@ -346,7 +382,8 @@ section#main-content {
   border: thin solid #3bb3e7;
 }
 
-.node-type-section .field-name-field-subtitle .field-item {
+.node-type-section .field-name-field-subtitle .field-item,
+div[class*="-field-subtitle"] {
   color: #000;
   font-size: 20px;
   text-transform: uppercase;
@@ -551,6 +588,7 @@ body.page-user #edit-submit {
 
   .navbar-nav {
     margin-top: 50px;
+    padding-left: 10px;
   }
 }
 
@@ -792,4 +830,52 @@ body.page-user #edit-submit {
   background: transparent !important;
   border: 0px !important;
   box-shadow: none !important;
+}
+
+.field--name-field-image
+{
+  display: none;
+}
+.page-node-type-seccion .view-slider-section
+{
+  display: none !important;
+}
+@media screen and (max-width: 768px){
+  .navbar-toggle
+{
+  position: relative;
+  padding-bottom: 25px;
+}
+}
+
+.region-navigation-collapsible,
+.region-navigation
+{
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 768px)
+{
+  .region-navigation-collapsible,
+  .region-navigation
+  {
+    width: 750px;
+  }
+}
+@media (min-width: 992px)
+{
+  .region-navigation-collapsible,
+  .region-navigation
+  {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px)
+{
+  .region-navigation-collapsible,
+  .region-navigation
+  {
+    width: 1170px;
+  }
 }
